@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Formulario de contacto</title>
+
+</head>
+<body>
+  <main>
+    <section class="cards">
+      <article class="card">
+        <h1>Contact Us</h1>
+        <div class="content">
+          <form>
+            <div class="firstName">
+              <label for="firstName">First Name <span>*</span></label>
+              <input required type="text" name="firstName" id="firstName">
+            </div>
+            <div class="lastName">
+              <label for="lastName">Last Name <span>*</span></label>
+              <input required type="text" name="lastName" id="lastName">
+            </div>
+            <div class="email">
+              <label for="email">Email Address <span>*</span></label>
+              <input required type="email" name="email" id="email">
+            </div>
+            <div class="queryType">
+              <p>Query Type <span>*</span></p>
+              <div class="query">
+                <input type="radio" value="General Enquiry" name="queryType" id="generalEnquiry">
+                <label for="generalEnquiry">General Enquiry</label>
+              </div>
+              <div class="query">
+                <input type="radio" value="Support Request" name="queryType" id="supportRequest">
+                <label for="supportRequest">Support Request</label>
+              </div>
+            </div>
+            <div class="message">
+              <label for="message">Message <span>*</span></label>
+              <textarea required name="message" id="message"></textarea>
+            </div>
+            <div class="consent">
+              <input type="checkbox" name="consent" id="consent">
+              <label for="consent">I consent to being contacted by the team <span>*</span></label>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+<script src="./scripts.js"></script>
+</html>
